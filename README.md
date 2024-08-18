@@ -3,6 +3,13 @@
 RegExr
 ======
 
+# Setup
+
+When setting up the DB, be sure to set sql mode globally:
+```sql
+SET GLOBAL SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"
+```
+
 # About
 [RegExr.com](http://regexr.com/) is an online tool to learn, build, and test Regular Expressions. It was created by [Grant Skinner](http://twitter.com/gskinner) and the nice people at [gskinner.com](http://gskinner.com/).
 
