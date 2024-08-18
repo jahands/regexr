@@ -23,4 +23,5 @@ build-docker:
 		&& rm -rf /var/lib/apt/lists/*
 	COPY +build-gulp/build/ /usr/local/apache2/htdocs/
 	COPY .htaccess /usr/local/apache2/htdocs/
+	COPY my-httpd.conf /usr/local/apache2/conf/httpd.conf
 	SAVE IMAGE regexr:latest
