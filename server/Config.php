@@ -26,7 +26,7 @@ define('DB_NAME', getenv('DB_NAME'));
 define('DB_SOCK', null);
 
 define('CACHE_PATH', './cache/');
-define('DEBUG', true);
+define('DEBUG', false);
 
 // OAUTH
 define('SESSION_NAME', 'session');
