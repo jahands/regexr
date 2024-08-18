@@ -6,6 +6,5 @@
 **/.dev.vars
 **/.turbo/
 **/dist/
-**/Config.php
 ./build/
 ./deploy/
