@@ -23,7 +23,6 @@ build-composer:
 	WORKDIR /app
 	COPY +composer/composer /usr/local/bin/composer
 	COPY +build-gulp/app .
-	RUN ls -lha
 	RUN cd ./server && composer install
 	RUN cp -r ./server/vendor ./build/server/vendor
 	SAVE ARTIFACT ./build/
