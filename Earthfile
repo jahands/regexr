@@ -19,7 +19,7 @@ build-gulp:
 	SAVE ARTIFACT .
 
 build-composer:
-	FROM php:8-apache
+	FROM php:7-apache
 	WORKDIR /app
 	COPY +composer/composer /usr/local/bin/composer
 	COPY +build-gulp/app .
@@ -29,7 +29,7 @@ build-composer:
 	SAVE ARTIFACT ./build/
 
 build-docker:
-	FROM php:8-apache
+	FROM php:7-apache
 	RUN docker-php-ext-install mysqli
 	COPY +build-composer/build/ /var/www/html/
 
