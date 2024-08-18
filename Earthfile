@@ -32,10 +32,13 @@ build-docker:
 	FROM php:8-apache
 	RUN docker-php-ext-install mysqli
 	COPY +build-composer/build/ /var/www/html/
+
 	RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 	# RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" # todo: switch to production
 	COPY .htaccess /var/www/html/
+	COPY server/Config.php /var/www/html/server/Config.php
 	COPY apache.conf /etc/apache2/sites-enabled/000-default.conf
 	RUN a2enmod rewrite
+
 	SAVE IMAGE regexr:php
 	SAVE IMAGE --push gitea.uuid.rocks/docker/regexr:php
