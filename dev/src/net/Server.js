@@ -262,6 +262,6 @@ class ServerPromise {
 
 Server.isLocal = Utils.isLocal
 Server.useBeta =
-  Server.isLocal || window.location.hostname === "beta-regexr.uuid.rocks"
-Server.host = "https://" + (Server.useBeta ? "beta-" : "") + "regexr.uuid.rocks"
+  Server.isLocal || window.location.hostname === "beta-regex.uuid.rocks"
+Server.host = "https://" + (Server.useBeta ? "beta-" : "") + "regex.uuid.rocks"
 Server.url = Server.host + "/server/api.php"

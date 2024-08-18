@@ -212,7 +212,7 @@ home.kids = [
           "<li><code>tool</code> - sets the tool (replace, list, details, or explain)</li>" +
           "<li><code>input</code> - populates the tool input field</li>" +
           "</ul></p>" +
-          "Ex. <a href='http://regexr.uuid.rocks/?expression=/./g&text=test'>regexr.uuid.rocks/?expression=/./g&text=test</a>",
+          "Ex. <a href='http://regex.uuid.rocks/?expression=/./g&text=test'>regex.uuid.rocks/?expression=/./g&text=test</a>",
       },
     ],
   },
